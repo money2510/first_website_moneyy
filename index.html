@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SciencePYQ | Class 10 Science Practice Portal</title>
+  <meta name="description" content="Practice Class 10 Science previous year questions chapter-wise and topic-wise including conceptual, application and competency-based questions as per NCERT." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">⚗️</div>
+        <span class="logo-text">SciencePYQ</span>
+        <span class="logo-badge">Class 10</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="chapters.html" class="nav-link">Chapters</a>
+        <a href="quiz.html" class="nav-link">Quick Quiz</a>
+        <a href="leaderboard.html" class="nav-link">Progress</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <a href="chapters.html" class="btn-primary">Start Practice</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="chapters.html" class="nav-link">Chapters</a>
+      <a href="quiz.html" class="nav-link">Quick Quiz</a>
+      <a href="leaderboard.html" class="nav-link">Progress</a>
+      <a href="chapters.html" class="btn-primary" style="margin-top:12px;">Start Practice</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        NCERT Class 10 · Science
+      </div>
+      <h1 class="hero-title">
+        Master Science with
+        <span class="gradient-text">Previous Year Questions</span>
+      </h1>
+      <p class="hero-subtitle">
+        Practice 500+ curated questions chapter-wise &amp; topic-wise.<br />
+        Includes <strong>Conceptual</strong>, <strong>Application-based</strong> &amp; <strong>Competency-based</strong> questions.
+      </p>
+      <div class="hero-actions">
+        <a href="chapters.html" class="btn-hero-primary" id="startLearning">
+          <span>Start Practicing</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="quiz.html" class="btn-hero-secondary">
+          <span>⚡ Quick Quiz</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Questions</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="13">0</span>
+          <span class="stat-label">Chapters</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Question Types</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Free Access</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-card-stack">
+        <div class="v-card v-card-3">
+          <div class="v-card-chip">Competency</div>
+          <div class="v-card-q">A student connected an electric lamp to observe its brightness at different voltages. What property does this demonstrate?</div>
+        </div>
+        <div class="v-card v-card-2">
+          <div class="v-card-chip">Application</div>
+          <div class="v-card-q">Why does a convex mirror always form a virtual and diminished image?</div>
+        </div>
+        <div class="v-card v-card-1">
+          <div class="v-card-chip chip-concept">Conceptual</div>
+          <div class="v-card-q">What happens to the resistance when the length of the conductor is doubled?</div>
+          <div class="v-card-options">
+            <div class="v-opt">A. Halved</div>
+            <div class="v-opt v-opt-correct">B. Doubled ✓</div>
+            <div class="v-opt">C. Quadrupled</div>
+            <div class="v-opt">D. Unchanged</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="section-header">
+      <h2>Why Practice Here?</h2>
+      <p>Everything you need to ace your Class 10 Science exam</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card" id="feat-chapterwise">
+        <div class="feature-icon">📚</div>
+        <h3>Chapter-wise Practice</h3>
+        <p>All 13 NCERT chapters organized systematically. Jump directly to the chapter you need.</p>
+      </div>
+      <div class="feature-card" id="feat-topicwise">
+        <div class="feature-icon">🎯</div>
+        <h3>Topic-wise Drill</h3>
+        <p>Each chapter is broken into specific topics for focused, targeted practice sessions.</p>
+      </div>
+      <div class="feature-card" id="feat-types">
+        <div class="feature-icon">🧠</div>
+        <h3>3 Question Types</h3>
+        <p>Conceptual, Application-based &amp; Competency-based questions as per latest CBSE pattern.</p>
+      </div>
+      <div class="feature-card" id="feat-pyq">
+        <div class="feature-icon">📝</div>
+        <h3>Previous Year Questions</h3>
+        <p>Authentic PYQs from CBSE board exams with detailed explanations and solutions.</p>
+      </div>
+      <div class="feature-card" id="feat-progress">
+        <div class="feature-icon">📊</div>
+        <h3>Track Progress</h3>
+        <p>Visual progress tracking per chapter and topic. Know exactly where you stand.</p>
+      </div>
+      <div class="feature-card" id="feat-instant">
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Feedback</h3>
+        <p>Get immediate answer feedback with detailed explanations after every question.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapters Preview -->
+  <section class="chapters-preview">
+    <div class="section-header">
+      <h2>Explore Chapters</h2>
+      <p>Science Class 10 — All NCERT Chapters</p>
+    </div>
+    <div class="chapters-grid" id="homeChaptersGrid">
+      <!-- Populated by JS -->
+    </div>
+    <div class="view-all-wrap">
+      <a href="chapters.html" class="btn-view-all">View All Chapters →</a>
+    </div>
+  </section>
+
+  <!-- Question Types Section -->
+  <section class="qtypes-section">
+    <div class="section-header">
+      <h2>Question Categories</h2>
+      <p>Aligned with the latest CBSE assessment framework</p>
+    </div>
+    <div class="qtypes-grid">
+      <div class="qtype-card" id="qt-conceptual">
+        <div class="qtype-icon">💡</div>
+        <div class="qtype-tag tag-conceptual">Conceptual</div>
+        <h3>Conceptual Questions</h3>
+        <p>Test your understanding of fundamental science concepts — definitions, laws, and principles.</p>
+        <ul class="qtype-list">
+          <li>Multiple choice questions</li>
+          <li>Fill in the blanks</li>
+          <li>True / False</li>
+          <li>Short answer</li>
+        </ul>
+        <a href="quiz.html?type=conceptual" class="qtype-btn">Practice Now →</a>
+      </div>
+      <div class="qtype-card featured" id="qt-application">
+        <div class="featured-badge">Most Asked</div>
+        <div class="qtype-icon">🔬</div>
+        <div class="qtype-tag tag-application">Application</div>
+        <h3>Application-based Questions</h3>
+        <p>Apply your scientific knowledge to real-life scenarios and solve practical problems.</p>
+        <ul class="qtype-list">
+          <li>Scenario-based MCQs</li>
+          <li>Diagram-based questions</li>
+          <li>Numerical problems</li>
+          <li>Case-based questions</li>
+        </ul>
+        <a href="quiz.html?type=application" class="qtype-btn">Practice Now →</a>
+      </div>
+      <div class="qtype-card" id="qt-competency">
+        <div class="qtype-icon">🏆</div>
+        <div class="qtype-tag tag-competency">Competency</div>
+        <h3>Competency-based Questions</h3>
+        <p>Higher-order thinking questions to evaluate critical analysis and scientific reasoning.</p>
+        <ul class="qtype-list">
+          <li>Assertion-Reason</li>
+          <li>Data interpretation</li>
+          <li>Multi-concept problems</li>
+          <li>Extended response</li>
+        </ul>
+        <a href="quiz.html?type=competency" class="qtype-btn">Practice Now →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Ready to Ace Your Boards?</h2>
+      <p>Join thousands of students practicing smarter with SciencePYQ</p>
+      <a href="chapters.html" class="btn-hero-primary">Start Practicing Now →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">⚗️</span>
+        <span class="logo-text">SciencePYQ</span>
+      </div>
+      <p class="footer-tagline">Class 10 Science · NCERT · CBSE Board Exam Preparation</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="chapters.html">Chapters</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="leaderboard.html">Progress</a>
+      </div>
+      <p class="footer-copy">© 2025 SciencePYQ · Made with ❤️ for Class 10 students</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

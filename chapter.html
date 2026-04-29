@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter Details | SciencePYQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/progress.css" />
+</head>
+<body>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">⚗️</div>
+        <span class="logo-text">SciencePYQ</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="chapters.html" class="nav-link active">Chapters</a>
+        <a href="quiz.html" class="nav-link">Quick Quiz</a>
+        <a href="leaderboard.html" class="nav-link">Progress</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-theme-toggle" id="themeToggle">🌙</button>
+      </div>
+      <button class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="chapters.html" class="nav-link active">Chapters</a>
+      <a href="quiz.html" class="nav-link">Quick Quiz</a>
+      <a href="leaderboard.html" class="nav-link">Progress</a>
+    </div>
+  </nav>
+
+  <main class="chapter-detail-layout" id="chapterLayout" style="display:none;">
+    <section class="chapter-detail-hero">
+      <a href="chapters.html" class="cd-back">← Back to Chapters</a>
+      <div class="cd-icon" id="cdIcon"></div>
+      <div class="cd-info">
+        <div class="cd-chapter-num" id="cdNum"></div>
+        <h1 class="cd-title" id="cdTitle"></h1>
+        <div class="cd-topics-preview" id="cdTopicsPreview"></div>
+      </div>
+      <div class="cd-stats">
+        <div class="cd-stat-card">
+          <div class="cd-stat-val" id="cdStatTotal">0</div>
+          <div class="cd-stat-lbl">Questions</div>
+        </div>
+        <div class="cd-stat-card">
+          <div class="cd-stat-val" id="cdStatAttempted" style="color:var(--accent-primary-light);">0</div>
+          <div class="cd-stat-lbl">Attempted</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter-detail-body">
+      <aside class="cd-sidebar">
+        <div class="cd-sidebar-card">
+          <div class="cd-sidebar-title">Topics</div>
+          <div class="cd-topic-nav" id="topicNav">
+            <!-- Populated by JS -->
+          </div>
+          <button class="btn-primary" id="btnStartChapterQuiz" style="width:100%; margin-top:24px; justify-content:center;">
+            Practice Entire Chapter →
+          </button>
+        </div>
+      </aside>
+      
+      <div class="cd-content">
+        <div class="cd-sidebar-title" style="margin-bottom:12px;">Previous Year Questions</div>
+        <div class="cd-type-filter" id="typeFilter">
+          <button class="cd-type-btn active" data-type="all">All Types</button>
+          <button class="cd-type-btn" data-type="conceptual">Conceptual</button>
+          <button class="cd-type-btn" data-type="application">Application</button>
+          <button class="cd-type-btn" data-type="competency">Competency</button>
+        </div>
+        <div class="cd-questions-list" id="questionsList">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="loadingState" style="text-align:center; padding:100px 24px;">
+    Loading Chapter Details...
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chapter.js"></script>
+</body>
+</html>
